@@ -21,7 +21,7 @@ class Assignment2:
 
     @staticmethod
     def checkGoodString(string):
-        if len(string) >= 9 and string[0].islower() and sum([1 for char in string if char.isdigit()]) <= 1:
+        if len(string) >= 9 and string[0].islower() and sum([1 for char in string if char.isdigit()]) < 2:
             return True
         else:
             return False
